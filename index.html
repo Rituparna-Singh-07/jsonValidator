@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Online JSON Validator with Error Line Number | Fast & Free</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="favicon.png">
-  <meta name="description" content="Validate JSON online for free. Find errors instantly and get the exact line number. Fastest JSON validator tool with syntax checking and formatting.">
+  <meta name="description"
+    content="Validate JSON online for free. Find errors instantly and get the exact line number. Fastest JSON validator tool with syntax checking and formatting.">
   <meta name="keywords" content="json validator, online json checker, json formatter, json error line, json parser">
   <link rel="canonical" href="https://yourdomain.com">
   <meta name="author" content="Your Brand">
 
-  <!-- Google AdSense Auto Ads -->
+
+  <!-- Header Ad -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7343220971941010"
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
+  <!-- HeaderAd -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7343220971941010" data-ad-slot="7566376662"
+    data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
 
   <!-- Open Graph -->
   <meta property="og:title" content="Online JSON Validator with Error Line Number">
-  <meta property="og:description" content="Free and fast JSON validator with line number highlighting. Fix errors instantly.">
+  <meta property="og:description"
+    content="Free and fast JSON validator with line number highlighting. Fix errors instantly.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yourdomain.com">
   <meta property="og:image" content="https://yourdomain.com/preview.png">
@@ -34,7 +45,9 @@
       padding: 0;
     }
 
-    header, main, footer {
+    header,
+    main,
+    footer {
       max-width: 800px;
       margin: 0 auto;
       padding: 2rem;
@@ -65,7 +78,7 @@
       border: 1px solid #444;
       border-radius: 10px;
       resize: vertical;
-      box-shadow: inset 0 0 8px rgba(0,0,0,0.5);
+      box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
     }
 
     button {
@@ -109,12 +122,14 @@
       header h1 {
         font-size: 1.8rem;
       }
+
       textarea {
         height: 200px;
       }
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -126,6 +141,16 @@
     <textarea id="jsonInput" placeholder="Paste your JSON here..."></textarea>
     <button onclick="validateJSON()">Validate JSON</button>
     <div class="result" id="result"></div>
+    <div style="margin-top: 2rem;">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7343220971941010"
+        crossorigin="anonymous"></script>
+      <!-- SidebarAd -->
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7343220971941010" data-ad-slot="7977440205"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
   </main>
 
   <footer>
@@ -150,7 +175,7 @@
         const match = e.message.match(/at position (\d+)/);
         if (match) {
           const pos = parseInt(match[1]);
-          lineNumber = getLineNumber(input, pos)-1;
+          lineNumber = getLineNumber(input, pos) - 1;
         }
         result.textContent = `❌ Invalid JSON (line ${lineNumber}): ${e.message}`;
         result.className = "result invalid";
@@ -159,4 +184,5 @@
   </script>
 
 </body>
+
 </html>
