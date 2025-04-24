@@ -285,7 +285,9 @@ textarea {
   const input = document.getElementById('jsonInput');
   input.select();
   document.execCommand('copy');
-  alert('JSON copied to clipboard!');
+  // alert('JSON copied to clipboard!');
+  document.body.insertAdjacentHTML('beforeend','<div style="position:fixed;bottom:30px;right:30px;background:#00d8a7;color:#1e1e2f;padding:10px 16px;border-radius:6px;font-size:14px;z-index:999;">Copied!</div>'); setTimeout(()=>document.body.lastElementChild.remove(),2000);
+
 }
 
 
